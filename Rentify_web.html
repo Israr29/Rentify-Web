@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="icon" href="./assets/Logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/Navbar.css" />
     <title>Rentify - Home</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <header>
+      <nav class="navbar">
+        <div class="top-nav">
+          <h1><span class="highlight">R</span><i>entify</i></h1>
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass" id="glass"></i>
+            <input type="text" placeholder="Search something here" />
+            <i class="fa-solid fa-filter"></i>
+          </div>
+        </div>
+
+        <div class="profile">
+          <div class="icons">
+            <i class="fa-solid fa-heart"></i>
+
+            <div class="notify">
+              <span class="alert-dot"></span>
+              <i class="fa-solid fa-bell"></i>
+            </div>
+
+            <i class="fa-solid fa-gear"></i>
+
+            <img
+              src="./assets/profile_img.png"
+              alt="User Profile Image"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <div class="hamburger" >
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
