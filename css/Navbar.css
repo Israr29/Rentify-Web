@@ -37,81 +37,211 @@ nav {
 
 .search-box i {
   margin: 5px;
-  color: #3D5278;
+  color: #3d5278;
   cursor: pointer;
 }
 
+.hamburger {
+  border: 2px solid red;
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger span {
+  width: 100%;
+  display: inline-block;
+  height: 3px;
+  background-color: black;
+  border-radius: 10px;
+}
+
 .profile {
-  
-  width: 12%;
+  width: 210x;
 }
 
 .profile .icons {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  height: 35px;
-
-  color: #3D5278;
+  justify-content: center;
+  gap: 0.8rem;
 }
 
+.icons button {
+  background: none;
+  color: #3d5278;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border: none;
+}
+#bell:hover {
+  animation: shake 0.4s ease;
+}
 
+@keyframes shake {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-3px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 
-.icons i{
-    border: 1px solid rgb(170, 169, 167);
-    padding: 7px;
-    border-radius: 50%;
+#setting:hover {
+  animation: rotate 0.8s ease;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-90deg);
+  }
+}
+
+#heart:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}
+
+.icon-btn:hover i {
+  color: #4b79a3;
+}
+
+.notify-menu {
+  list-style: none;
+  position: absolute;
+  background: #94c8f933;
+  width: max-content;
+  height: auto;
+  padding: 8px;
+  font-size: 0.9rem;
+  top: 45px;
+  left: -3rem;
+  font-weight: 300;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease;
+}
+
+.notify:hover .notify-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+.settings,
+.user-profile,
+.notify {
+  position: relative;
+}
+
+.settings-menu {
+  list-style: none;
+  position: absolute;
+  background: #94c8f933;
+  width: 200px;
+  height: auto;
+  padding: 15px 4px;
+  font-size: 0.9rem;
+  top: 45px;
+  left: -7.4rem;
+  font-weight: 500;
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease;
+}
+
+.profile-menu{
+ 
+ list-style: none;
+  position: absolute;
+  background: #94c8f933;
+  width: 200px;
+  height: auto;
+  padding: 15px 4px;
+  font-size: 0.9rem;
+  top: 45px;
+  left: -9rem;
+  font-weight: 600;
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease; 
+}
+
+.settings-menu li,
+.profile-menu li {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  overflow-x: hidden;
+}
+
+.settings:hover .settings-menu,
+.user-profile:hover .profile-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+/* .settings-menu li:hover{
+  background: #94c8f933;
+  transition: all .4s ease;
+  margin-left: 5px;
+
+} */
+
+@media (max-width: 810px) {
+  .hamburger {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2px;
-    cursor: pointer;
+  }
 
-
-}
-
-.icons img{
-    cursor: pointer;
-    height: 30px;
-}
-
-
-.notify{
+  .navbar {
     position: relative;
-    display: inline-block;
-}
-
-.alert-dot{
-    position: absolute;
-    width: 8px ;
-    height: 8px;
-    background: red;
-    border-radius: 50%;
-    top: 4px;
-    right: 0px;
-}
-
-
-
-
-.hamburger{
-    
-    width: 35px;
-    height: 30px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
+  }
+  .navbar.top-nav > .search-box,
+  .profile {
     display: none;
+    position: relative;
+  }
 }
-
-
-.hamburger span{
-    width: 100%;
-    height: 3px;
-    background-color: #000;
-    border-radius: 2px;
-}
-
-

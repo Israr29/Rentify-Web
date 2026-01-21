@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -29,27 +29,64 @@
 
         <div class="profile">
           <div class="icons">
-            <i class="fa-solid fa-heart"></i>
+            <button
+              class="icon-btn wishlist-btn"
+              id="heart"
+              aria-label="Add to wishlist"
+            >
+              <i class="fa-solid fa-heart"></i>
+            </button>
 
             <div class="notify">
-              <span class="alert-dot"></span>
-              <i class="fa-solid fa-bell"></i>
+              <button
+                class="icon-btn notify-btn"
+                id="bell"
+                aria-label="Notifications"
+              >
+                <span class="alert-dot"></span>
+                <i class="fa-solid fa-bell"></i>
+              </button>
+
+              <ul class="notify-menu">
+                <li>
+                  <p>No Notification yet!</p>
+                </li>
+              </ul>
             </div>
 
-            <i class="fa-solid fa-gear"></i>
+            <div class="settings">
+              <button
+                class="icon-btn settings-btn"
+                id="setting"
+                aria-label="Settings"
+              >
+                <i class="fa-solid fa-gear"></i>
+              </button>
 
-            <img
-              src="./assets/profile_img.png"
-              alt="User Profile Image"
-              loading="lazy"
-            />
+              <ul class="settings-menu">
+                <li>Account</li>
+                <li>Notifications</li>
+                <li>Dark Mode</li>
+              </ul>
+            </div>
+
+            <div class="user-profile">
+              <button class="profile-btn" aria-label="User profile">
+                <img src="./assets/profile_img.png" alt="User Profile" />
+              </button>
+              <ul class="profile-menu">
+                <li>My Profile</li>
+                <li>Register</li>
+                <li>LogOut <i class="fa-solid fa-arrow-right"></i></li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <div class="hamburger" >
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </nav>
     </header>
