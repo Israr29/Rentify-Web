@@ -1,0 +1,92 @@
+.content-section {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.ads {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  gap: 2rem;
+}
+
+.ads-card {
+  flex: 1;
+  height: 340px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.ad-content {
+  max-width: 55%;
+}
+
+.ad-content h1 {
+  font-size: 1.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.ad-content p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+
+.ad-btn {
+  padding: 0.6rem 1.4rem;
+  border: none;
+  background: #3563e9;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.ad-image img {
+  max-width: 100%;
+  height: 100px;
+  height: 80px;
+  object-fit: contain;
+  image-rendering: optimizeQuality;
+}
+
+.ad-image {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.card2 {
+  background: #3563e9;
+}
+.card1 {
+  background: #5caffc;
+}
+
+.btn2 {
+  background: #5caffc;
+}
+@media (max-width: 768px) {
+  .ads {
+    flex-direction: column;
+  }
+
+  .ads-card {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .ad-content {
+    max-width: 100%;
+  }
+}
