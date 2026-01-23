@@ -72,6 +72,12 @@
   background: #5caffc;
 }
 
+.btn1:hover
+, .btn2:hover{
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
 .btn2 {
   background: #5caffc;
 }
