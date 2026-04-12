@@ -1,0 +1,79 @@
+.pick-drop {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pick-up,.drop-off {
+  width: 35%;
+  border-radius: 14px;
+  box-shadow: 1px 1px 5px #dad9d9;
+  padding: 15px 25px;
+}
+
+h5 {
+  font-size: 16px;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.pick-up h5 i,.drop-off h5 i {
+  background: transparent;
+  color: #3563e9;
+  margin-right: 3px;
+}
+
+.pick-info {
+  display: flex;
+  margin-top: 1.4rem;
+}
+
+.location,
+.time,
+.date {
+  width: max-content;
+  font-size: 15px;
+  padding: 0px 5px;
+  margin-left: 10px;
+}
+
+.drop-btn i{
+    margin-left: 6px;
+}
+.location,
+.date {
+  border-right: 1px solid silver;
+}
+
+.pick-info .drop-btn {
+  position: relative;
+  cursor: pointer;
+  color: #031754ca;
+}
+.dropdown-menu {
+  position: absolute;
+  list-style: none;
+  background: #fff;
+  width: 100%;
+  height: auto;
+  padding: 10px 0px;
+  top: 22px;
+  cursor: pointer;
+  border: 1px solid silver;
+  border-radius: 9px;
+  display: none;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  width: 100%;
+  overflow: hidden;
+  padding: 9px;
+}
+
+.location .dropdown-menu li:hover {
+  background: #f4f2f2;
+  transition: 0.3s all ease-in-out;
+}

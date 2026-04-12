@@ -11,4 +11,6 @@
 body{
     background-color:#ffff ;
     color: #000;
+    border: 2px solid red;
+    height: auto;
 }

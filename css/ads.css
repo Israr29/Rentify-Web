@@ -1,11 +1,12 @@
-.content-section {
+.ads-section {
   width: 100%;
   padding: 2rem;
   display: flex;
   justify-content: center;
+
 }
 
-.ads {
+.ads{
   width: 100%;
   max-width: 1200px;
   display: flex;
@@ -26,6 +27,7 @@
 
 .ad-content {
   max-width: 55%;
+  z-index: 999;
 }
 
 .ad-content h1 {
@@ -54,10 +56,10 @@
   height: 80px;
   object-fit: contain;
   image-rendering: optimizeQuality;
+  z-index: 999;
 }
 
 .ad-image {
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,6 +83,25 @@
 .btn2 {
   background: #5caffc;
 }
+
+.card2,.card1{
+  position: relative;
+}
+
+
+
+.bg-img{
+  position: absolute;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: url('/assets/rectangle.png');
+  background-position: center;
+  width: 100%;
+
+}
+
 @media (max-width: 768px) {
   .ads {
     flex-direction: column;
